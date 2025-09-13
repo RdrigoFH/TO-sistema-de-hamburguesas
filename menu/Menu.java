@@ -15,6 +15,32 @@ public class Menu {
       inicializarMenu();
    }
 
+   private void inicializarMenu() {
+      // Hamburguesas
+      Map<String, Integer> insumosClasica = new HashMap<>();
+      insumosClasica.put("Pan", 1);
+      insumosClasica.put("Carne", 1);
+      insumosClasica.put("Queso", 1);
+      hamburguesas.add(new Hamburguesa("Clásica", "Carne, queso y pan", 12.50, insumosClasica));
+
+      Map<String, Integer> insumosDoble = new HashMap<>();
+      insumosDoble.put("Pan", 1);
+      insumosDoble.put("Carne", 2);
+      insumosDoble.put("Queso", 1);
+      hamburguesas.add(new Hamburguesa("Doble", "Doble carne con queso", 18.00, insumosDoble));
+
+      // Bebidas
+      Map<String, Integer> insumosCola = new HashMap<>();
+      insumosCola.put("Botella", 1);
+      insumosCola.put("Gaseosa", 1);
+      bebidas.add(new Bebida("Coca Cola", "500ml", 5.00, insumosCola));
+
+      Map<String, Integer> insumosAgua = new HashMap<>();
+      insumosAgua.put("Botella", 1);
+      insumosAgua.put("Agua", 1);
+      bebidas.add(new Bebida("Agua Mineral", "500ml", 3.50, insumosAgua));
+   }
+
    public void mostrarMenu() {
       System.out.println("===== MENÚ DE HAMBURGUESAS =====");
       for (int i = 0; i < hamburguesas.size(); i++) {
