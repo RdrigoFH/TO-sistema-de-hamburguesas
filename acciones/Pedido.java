@@ -50,4 +50,15 @@ public class Pedido {
         }
         System.out.println("Total: $" + calcularTotal());
     }
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public List<Hamburguesa> getHamburguesas() {
+        return hamburguesas;
+    }
+
+    public List<Bebida> getBebidas() {
+        return bebidas;
+    }
 }
