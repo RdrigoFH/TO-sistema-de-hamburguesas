@@ -10,7 +10,7 @@ public class pruebaPedido {
         Menu menu = new Menu();
 
         // Crear cliente y mozo
-        Cliente cliente = new Cliente("Juan Pérez");
+        Cliente cliente = new Cliente("Juan Pérez","123456789", "99999999");
         Mozo mozo = new Mozo("Carlos", menu);
 
         // Tomar pedido
